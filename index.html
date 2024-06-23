@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Compatibility Checker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-3">
+        <h5 class="text-center">PC Compatibility</h5>
+        <div class="form-group">
+            <label for="processorSelect">Processor Brand:</label>
+            <select class="form-control" id="processorSelect">
+                <option value="">Select Processor Brand</option>
+                <option value="Intel">Intel</option>
+                <option value="AMD">AMD</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="generationSelect">Processor Generation:</label>
+            <select class="form-control" id="generationSelect" disabled>
+                <option value="">Select Processor Generation</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="processorModelSelect">Processor Model:</label>
+            <select class="form-control" id="processorModelSelect" disabled>
+                <option value="">Select Processor Model</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="socketInput">Socket:</label>
+            <input type="text" class="form-control" id="socketInput" disabled>
+        </div>
+        <div class="form-group">
+            <label for="motherboardSelect">Motherboard:</label>
+            <select class="form-control" id="motherboardSelect" disabled>
+                <option value="">Select Motherboard</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="ramSelect">RAM:</label>
+            <select class="form-control" id="ramSelect" disabled>
+                <option value="">Select RAM</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="gpuSelect">GPU:</label>
+            <select class="form-control" id="gpuSelect" disabled>
+                <option value="">Select GPU</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="psuSelect">PSU:</label>
+            <select class="form-control" id="psuSelect" disabled>
+                <option value="">Select PSU</option>
+            </select>
+        </div>
+	<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <button id="saveButton" class="btn btn-primary">SAVE</button>
+        </div>
+        <div class="col-auto">
+            <button id="showCompatibilityButton" class="btn btn-secondary">LIHAT</button>
+        </div>
+        <div class="col-auto">
+            <button id="deleteButton" class="btn btn-danger">HAPUS</button>
+        </div>
+    </div>
+</div>
+        <div id="compatibilityResult" class="mt-5"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
